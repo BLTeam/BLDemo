@@ -1,16 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <title>LOL排名</title>
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <link rel="stylesheet" href="dep/mui.min.css" />
+
+    <style type="text/css"></style>
 </head>
 <body>
-    <form action="displaySummonerInfo" method="post">
-        请输入服务器名字: <input type="text" name="serverName"><br />
-        珳输入召唤师名字: <input type="text" name="summoner"><br />
-        请输入你所在的学校: <input type="text" name="schoolName"><br />
-        <input type="submit">
+    <form action="displaySummonerInfo" class="mui-input-group" method="post">
+        <div class="mui-input-row">
+            <label for="">服务器</label>
+            <input type="text" placeholder="请输入服务器名字" name="serverName" class="mui-input-clear">
+            <span class="mui-icon mui-icon-clear mui-hidden"></span>
+        </div>
+        <div class="mui-input-row">
+            <label for="">召唤师</label>
+            <input type="text" placeholder="请输入召唤师名字" name="summoner" class="mui-input-clear">
+            <span class="mui-icon mui-icon-clear mui-hidden"></span>
+        </div>
+        <div class="mui-input-row">
+            <label for="">学校</label>
+            <input type="text" placeholder="请输入你所在的学校" name="schoolName" class="mui-input-clear">
+            <span class="mui-icon mui-icon-clear mui-hidden"></span>
+        </div>
+        <div class="mui-button-row">
+            <button type="submit" class="mui-btn mui-btn-primary">确认</button>
+        </div>
     </form>
 
+<script type="text/javascript" src="dep/mui.min.js"></script>
 </body>
 </html>

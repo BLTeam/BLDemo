@@ -1,16 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <title>召唤师信息</title>
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <link rel="stylesheet" href="dep/mui.min.css" />
+
+    <style type="text/css"></style>
 </head>
 <body>
-<form action="doMainInput" method="post">
-   你的分段: <input type="text" disabled="true" value="{$summoner.rank}"> <br />
-   你的隐藏分: <input type="text" disabled="true" value="{$summoner.rank_hidden}"><br />
-
-    <input type="submit">
-</form>
-
+    <header class="mui-bar mui-bar-nav">
+        <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+        <h1 class="mui-title">召唤师信息</h1>
+    </header>
+    <div class="mui-content">
+        <ul class="mui-table-view">
+             <li class="mui-table-view-cell">服务器：{$summoner.summoner_name}</li>
+             <li class="mui-table-view-cell">学校：{$summoner.school_name}</li>
+             <li class="mui-table-view-cell">召唤师：{$summoner.server_name}</li>
+             <li class="mui-table-view-cell">段位：{$summoner.rank}</li>
+             <li class="mui-table-view-cell">隐藏分：{$summoner.rank_hidden}</li>
+        </ul>
+    </div>
+<script type="text/javascript" src="dep/mui.min.js"></script>
 </body>
 </html>
